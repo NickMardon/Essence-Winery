@@ -1,0 +1,192 @@
+/*Responsive Navbar*/
+li {
+    list-style: none;
+    margin: 0 1em;
+    font-size: 3vh;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    font-family: 'Playball', cursive;
+}
+nav {
+    width: 100%;
+    background-color: #ba9bcc;
+}
+ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    margin: 0; 
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 58px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .flex-container {
+      display: flex;
+      align-items: flex-end;
+  }
+
+  .flex-item {
+      display: inline-flex;;
+      margin-bottom: 6px;
+  }
+
+  #header-img {
+      padding: 20px 0 0 25px;
+      height: 100px;
+  }
+/*Banner*/
+.indexBody {
+    background-image: url("IMGs/winePic3.jpeg");
+}
+.bannerHeader {
+    text-align: center;
+}
+#bannerTitle {
+    font-size: 3.5rem;
+    font-family: 'Fondamento', cursive;
+}
+
+.btn {
+    background-color: #ba9bcc;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 32px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/*Footer*/
+
+.footerContainer {
+    display: flex;
+    background-color: #ba9bcc;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#footerText {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/*Responsive Design*/
+@media only screen and (max-width: 750px) {
+    /*shows elements in a column*/
+    ul{
+      flex-direction: column;
+    }
+    
+    /* deletes margin on top or bottom of the a tag*/
+    li{
+      margin: 0;
+    }
+   /* makes sure that the a tag will take the entire screen*/
+    a{
+      display: flex;
+    }
+    .flex-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    .flex-item {
+        padding-left: 1.2rem;
+    }
+  }
+
+/*About Page*/
+
+.aboutBody{
+    background-color: #5F5A5F;
+}
+
+main {
+    margin: 0;
+}
+
+.aboutContainer{
+    display: flex;
+    background-color: #5F5A5F;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.aboutContent {
+    order: 2;
+    border: 2px solid black;
+    border-left: none;
+    background-color: #5F5A5F;
+    width: 35%;
+    padding: 5%;
+    margin: 5%;
+    
+}
+.aboutPics {
+    width: 30%;
+    float: left;
+    background-color: #5F5A5F;
+    padding: 5%;
+}
+#video {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#aboutPic {
+    height: 100%;
+    width: auto;
+}
+
+/*Contact Page*/
+.contactBody {
+    background-image: url(IMGs/winePic3.jpeg);
+}
+.contactForm {
+    background-color: #F9F9F9;
+    margin: 15% 20%;
+    padding: 50px 30px;
+}
+#first-name {
+    width: 300px;
+}
+#last-name {
+    width: 300px;
+}
+#email {
+    width: 300px;
+}
+#textArea {
+    width: 700px;
+    height: 300px;
+}
+
+form label {
+    padding: 1rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+#submit {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 1rem;
+    height: 2rem;
+    width: 4rem;
+    background-color: #77D378
+}
